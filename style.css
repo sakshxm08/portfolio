@@ -351,8 +351,83 @@
   .devInfo {
     align-items: center;
   }
+
+  .hi {
+    font-size: 2.5em;
+  }
+  .name {
+    font-size: 2em;
+  }
   .about {
+    font-size: 0.8rem;
     width: 75vw;
     margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .sidebar nav {
+    font-size: 1.3em;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .sidebar {
+    width: 100vw;
+    text-align: center;
+    overflow: hidden;
+    height: 100%;
+    position: sticky;
+    top: 0;
+  }
+  .sidebar nav {
+    margin-top: 70px;
+  }
+  .cross {
+    right: 0;
+    padding-right: 10px;
+  }
+  .sidebarTran {
+    transform: translate(-100vw, 0);
+  }
+  .infoContainer {
+    padding-top: 15vh;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+}
+@media screen and (max-width: 320px) {
+  .btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .btn button {
+    margin: 10px 0 0;
+    font-size: 0.7em;
+  }
+  .devImg img {
+    margin-top: 20px;
+  }
+  .h1 {
+    font-size: 2.3em;
+  }
+  .name {
+    font-size: 1.8em;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .infoContainer {
+    width: 95vw;
+  }
+  .h1 {
+    font-size: 2.1em;
+  }
+  .name {
+    font-size: 1.5m;
+  }
+  .about {
+    font-size: 0.6em;
   }
 }
