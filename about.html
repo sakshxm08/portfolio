@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="sidebar sidebarTran">
+        <div class="hamburgerCross">
+          <img
+            class="cross d-none"
+            src="./content/close.png"
+            alt=""
+            width="40px"
+            id="cross"
+          />
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html" class="active">About</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact Me</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="main">
+        <div class="hamburgerMenu">
+          <img
+            class="menu"
+            src="./content/menu.png"
+            alt=""
+            width="40px"
+            id="menu"
+          />
+        </div>
+      </div>
+    </div>
+    <script>
+      document.querySelector(".hamburgerMenu").addEventListener("click", () => {
+        document.querySelector(".sidebar").classList.toggle("sidebarTran");
+        setTimeout(() => {
+          document.querySelector(".cross").classList.toggle("d-none");
+        }, 400);
+        document.querySelector(".menu").classList.toggle("d-none");
+      });
+      document
+        .querySelector(".hamburgerCross")
+        .addEventListener("click", () => {
+          document.querySelector(".sidebar").classList.toggle("sidebarTran");
+          setTimeout(() => {
+            document.querySelector(".menu").classList.toggle("d-none");
+          }, 400);
+          document.querySelector(".cross").classList.toggle("d-none");
+        });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo&family=IBM+Plex+Mono:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+.sidebar {
+  background-color: teal;
+  width: 25vw;
+  height: 100vh;
+  font-family: "Cairo", sans-serif;
+  transition: transform 0.4s ease-in;
+  z-index: 1;
+}
+
+.sidebarTran {
+  transform: translate(-25vw, 0);
+  position: absolute;
+}
+
+.main {
+  /* background-color: cyan; */
+  width: 75vw;
+  margin: 0 0 0 14vw;
+  position: absolute;
+}
+
+.sidebar nav {
+  padding: 80px;
+  /* font-size: 24px; */
+  font-size: 1.6em;
+}
+
+.sidebar nav ul {
+  list-style: none;
+}
+.sidebar nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+.sidebar nav ul li a:hover {
+  /* text-decoration: rgb(187, 187, 187); */
+  color: rgb(187, 187, 187);
+}
+
+/* .sidebar nav ul li:hover:after {
+  transform: scaleY(1);
+  transform-origin: bottom left;
+}
+
+.sidebar nav ul li:after {
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+} */
+
+.sidebar nav ul li a.active {
+  color: rgb(187, 187, 187);
+  font-weight: 900;
+}
+.sidebar nav ul li {
+  padding: 25px 0;
+}
+
+.infoContainer {
+  /* background-color: rgb(33, 57, 117); */
+  height: 50vh;
+  width: 65vw;
+  margin: 25vh auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+.devImg img {
+  height: 50vh;
+}
+
+.devInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.btn button {
+  background-color: teal;
+  color: white;
+  border-radius: 25px;
+  padding: 2px 13px;
+  margin: 20px 15px 25px 0;
+  cursor: pointer;
+  font-family: "Cairo", sans-serif;
+  /* font-size: 15px; */
+  font-size: 1em;
+  border-color: teal;
+  font-weight: bold;
+}
+.btn button:hover {
+  background-color: white;
+  color: teal;
+}
+
+.hi {
+  /* font-size: 50px; */
+  font-size: 3.2em;
+  font-family: "IBM Plex Mono", monospace;
+}
+
+.name {
+  /* font-size: 45px; */
+  font-size: 2.8em;
+  font-family: "Cairo", sans-serif;
+  font-weight: bold;
+}
+
+.about {
+  /* font-size: 18px; */
+  font-size: 1.15em;
+  font-family: "IBM Plex Mono", monospace;
+  margin: 5px 0;
+  font-weight: bold;
+}
+
+/* Styling Hamburger Icons */
+.menu,
+.cross {
+  position: absolute;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.cross {
+  margin-left: calc(-25vw + 665px);
+}
+.d-none {
+  display: none;
+}
+.menu {
+  margin-left: calc(-14vw + 10px);
+}

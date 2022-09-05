@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo&family=IBM+Plex+Mono&display=swap");
+
+.contactMe {
+  display: flex;
+  height: 60vh;
+  justify-content: center;
+  margin: 20vh auto;
+  width: 60vw;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.contactImg {
+  /* background-color: thistle; */
+  width: 40%;
+  display: flex;
+  align-items: center;
+}
+
+.contactImg img {
+  height: 45vh;
+}
+
+.contactForm {
+  /* background-color: aquamarine; */
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 50px;
+  font-family: "Cairo", sans-serif;
+}
+
+.contactHead {
+  margin: 0 0 20px 0;
+  font-family: "IBM Plex Mono", monospace;
+  /* font-size: 35px; */
+  font-size: 2.18em;
+  font-weight: bold;
+}
+
+.form-control {
+  border-radius: 15px;
+  border-style: none;
+  background-color: rgb(221, 221, 221);
+}
+
+#userName,
+#userEmail {
+  font-size: 0.85em;
+  padding: 8px 17px;
+  margin: 5px 0;
+  width: 70%;
+}
+
+.form-text {
+  font-size: 0.7em;
+  margin-left: 10px;
+  margin-top: -5px;
+  margin-bottom: 5px;
+}
+
+#userMsg {
+  border-radius: 15px;
+  border-style: none;
+  background-color: rgb(221, 221, 221);
+  width: 70%;
+  margin: 5px 0;
+  padding: 8px 17px;
+  font-size: 0.87em;
+  font-family: "Cairo", sans-serif;
+}
+.form-check {
+  margin-top: -5px;
+}
+#isUser {
+  margin-right: 5px;
+}
+
+.form-check-label {
+  font-size: 0.87em;
+}
+.btn-send {
+  padding: 8px 17px;
+  margin: 15px 0 5px;
+  width: 77%;
+  border-radius: 50px;
+  border-style: solid;
+  background-color: teal;
+  color: white;
+  border-color: teal;
+  font-size: 0.85em;
+  cursor: pointer;
+}
+.btn-send:hover {
+  color: teal;
+  background-color: white;
+}
