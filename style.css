@@ -359,7 +359,7 @@
     font-size: 2em;
   }
   .about {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     width: 75vw;
     margin-bottom: 10px;
     display: flex;
@@ -367,7 +367,7 @@
     align-items: center;
   }
   .sidebar nav {
-    font-size: 1.3em;
+    font-size: 1.5em;
   }
 }
 
@@ -375,13 +375,11 @@
   .sidebar {
     width: 100vw;
     text-align: center;
-    overflow: hidden;
-    height: 100%;
-    position: sticky;
+    position: fixed;
     top: 0;
   }
   .sidebar nav {
-    margin-top: 70px;
+    margin-top: 7vh;
   }
   .cross {
     right: 0;
@@ -391,7 +389,7 @@
     transform: translate(-100vw, 0);
   }
   .infoContainer {
-    padding-top: 15vh;
+    padding-top: 10vh;
     margin-bottom: 0;
     padding-bottom: 0;
   }
@@ -425,9 +423,9 @@
     font-size: 2.1em;
   }
   .name {
-    font-size: 1.5m;
+    font-size: 1.5em;
   }
   .about {
-    font-size: 0.6em;
+    font-size: 0.7em;
   }
 }
