@@ -5,7 +5,7 @@
   height: 60vh;
   justify-content: center;
   margin: 20vh auto;
-  width: 60vw;
+  width: 65vw;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .contactImg {
@@ -16,7 +16,7 @@
 }
 
 .contactImg img {
-  height: 45vh;
+  height: 42vh;
 }
 
 .contactForm {
@@ -93,4 +93,102 @@
 .btn-send:hover {
   color: teal;
   background-color: white;
+}
+
+@media screen and (max-width: 1100px) {
+  .contactMe {
+    height: 70vh;
+    width: 80vw;
+    margin: 15vh auto;
+  }
+  .contactImg img {
+    height: auto;
+    width: 35vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contactMe {
+    width: 85vw;
+  }
+  .contactHead {
+    font-size: 2em;
+  }
+  .contactImg img {
+    height: auto;
+    width: 40vw;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .contactHead {
+    font-size: 1.8em;
+  }
+  .form-text {
+    font-size: 0.6em;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .contactImg img {
+    display: none;
+  }
+  .contactForm {
+    width: 100%;
+    margin-right: 84px;
+  }
+  .contactImg {
+    width: 0;
+  }
+  .contactHead {
+    font-size: 2em;
+    margin-right: -15px;
+  }
+  .form-text {
+    font-size: 0.7em;
+  }
+
+  #userEmail,
+  #userName,
+  #userMsg {
+    width: 100%;
+  }
+  .btn-send {
+    width: 90px;
+  }
+}
+@media screen and (max-width: 430px) {
+  .contactHead {
+    font-size: 1.9rem;
+  }
+  .form-text {
+    font-size: 0.6em;
+  }
+  .contactForm {
+    margin-left: 35px;
+    margin-right: 69px;
+  }
+}
+@media screen and (max-width: 380px) {
+  .contactMe {
+    width: 90vw;
+  }
+  .contactForm {
+    margin-left: 20px;
+    margin-right: 54px;
+  }
+  .contactHead {
+    font-size: 1.6em;
+  }
+  .form-text {
+    line-height: 1;
+    margin-top: 2px;
+    font-size: 0.5em;
+  }
+  .form-check {
+    line-height: 1;
+  }
+  .form-check-label {
+    font-size: 0.7em;
+  }
 }
