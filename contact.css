@@ -130,6 +130,10 @@
 }
 
 @media screen and (max-width: 600px) {
+  .contactMe {
+    margin-bottom: 140px;
+  }
+
   .contactImg img {
     display: none;
   }
