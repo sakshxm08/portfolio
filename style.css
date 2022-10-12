@@ -187,6 +187,13 @@
   text-decoration: none;
   color: grey;
 }
+
+.bi-linkedin:hover {
+  fill: #0a66c2;
+}
+.bi-github:hover {
+  fill: #171515;
+}
 /* Max-width 1200px */
 
 @media screen and (max-width: 1200px) {
