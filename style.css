@@ -214,7 +214,7 @@
     height: 100vh;
     font-family: "Cairo", sans-serif;
     transition: transform 0.4s ease-in;
-    z-index: 1;
+    z-index: 6;
   }
 
   .sidebarTran {
@@ -432,7 +432,7 @@
     flex-direction: column;
     align-items: center;
     width: 80vw;
-    margin: 20vh auto;
+    margin: 10vh auto 20vh;
     height: fit-content;
   }
   .devInfo {
