@@ -4,7 +4,8 @@
   display: flex;
   height: 60vh;
   justify-content: center;
-  margin: 20vh auto;
+  align-items: center;
+  margin: 15vh auto 0;
   width: 65vw;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -99,7 +100,7 @@
   .contactMe {
     height: 70vh;
     width: 80vw;
-    margin: 15vh auto;
+    margin: 10vh auto 0;
   }
   .contactImg img {
     height: auto;
@@ -131,9 +132,9 @@
 
 @media screen and (max-width: 600px) {
   .contactMe {
-    margin-bottom: 140px;
+    height: 60vh;
+    margin-top: 12vh;
   }
-
   .contactImg img {
     display: none;
   }

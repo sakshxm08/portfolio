@@ -5,7 +5,7 @@
   padding: 0;
 }
 
-.container {
+.myContainer {
   display: flex;
   height: 100vh;
 }
@@ -22,12 +22,19 @@
   transform: translate(-25vw, 0);
   position: absolute;
 }
-
+.mainContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  position: absolute;
+}
 .main {
   /* background-color: cyan; */
-  width: 75vw;
-  margin: 0 0 0 14vw;
-  position: absolute;
+  margin: 0;
+  width: 100vw;
+  /* position: absolute; */
+  position: relative;
 }
 
 .sidebar nav {
@@ -69,15 +76,16 @@
 
 .infoContainer {
   /* background-color: rgb(33, 57, 117); */
-  height: 50vh;
+  height: fit-content;
   width: 65vw;
-  margin: 25vh auto;
+  margin: 20vh auto 0;
   display: flex;
   justify-content: space-around;
+  align-items: center;
 }
 
 .devImg img {
-  height: 48vh;
+  height: 46vh;
 }
 
 .devInfo {
@@ -85,19 +93,49 @@
   flex-direction: column;
   justify-content: center;
 }
-
+.btn {
+  display: flex;
+  flex-direction: column;
+}
+.basicBtn {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#projectLink {
+  text-decoration: none;
+}
+#project {
+  width: 100%;
+  background-color: white;
+  color: teal;
+  margin: 10px 0 0;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.2s ease-out, color 0.2s ease-out;
+}
+#project:hover {
+  background-color: teal;
+  color: white;
+}
 .btn button {
   background-color: teal;
   color: white;
   border-radius: 25px;
   padding: 2px 13px;
-  margin: 20px 15px 25px 0;
+  margin: 20px 0 0;
+  width: 160px;
   cursor: pointer;
   font-family: "Cairo", sans-serif;
   /* font-size: 15px; */
   font-size: 1em;
   border-color: teal;
+  -webkit-border-color: teal;
+  -moz-border-color: teal;
   font-weight: bold;
+  transition: background-color 0.2s ease-out, color 0.2s ease-out;
 }
 .btn button:hover {
   background-color: white;
@@ -140,7 +178,7 @@
   display: none;
 }
 .menu {
-  margin-left: calc(-14vw + 10px);
+  margin-left: 10px;
 }
 
 /* footer styling */
@@ -155,7 +193,8 @@
 .footer {
   height: fit-content;
   width: calc(100% - 240px);
-  position: fixed;
+  /* position: fixed; */
+  position: relative;
   bottom: 0px;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -204,149 +243,49 @@
 /* Max-width 1200px */
 
 @media screen and (max-width: 1200px) {
-  .container {
-    display: flex;
-    height: 100vh;
-  }
   .sidebar {
-    background-color: teal;
     width: 30vw;
-    height: 100vh;
-    font-family: "Cairo", sans-serif;
-    transition: transform 0.4s ease-in;
     z-index: 6;
   }
 
   .sidebarTran {
     transform: translate(-30vw, 0);
-    position: absolute;
   }
 
   .main {
-    /* background-color: cyan; */
     width: 100vw;
     margin: 0;
-    position: absolute;
   }
 
   .sidebar nav {
     padding: 80px 60px;
-    /* font-size: 24px; */
-    font-size: 1.6em;
-  }
-
-  .sidebar nav ul {
-    list-style: none;
-  }
-  .sidebar nav ul li a {
-    text-decoration: none;
-    color: white;
-  }
-  .sidebar nav ul li a:hover {
-    /* text-decoration: rgb(187, 187, 187); */
-    color: rgb(187, 187, 187);
-  }
-
-  /* .sidebar nav ul li:hover:after {
-    transform: scaleY(1);
-    transform-origin: bottom left;
-  }
-  
-  .sidebar nav ul li:after {
-    transform: scaleX(0);
-    transform-origin: bottom right;
-    transition: transform 0.25s ease-out;
-  } */
-
-  .sidebar nav ul li a.active {
-    color: rgb(187, 187, 187);
-    font-weight: 900;
-  }
-  .sidebar nav ul li {
-    padding: 25px 0;
   }
 
   .infoContainer {
-    /* background-color: rgb(33, 57, 117); */
-    height: 50vh;
     width: 80vw;
-    margin: 25vh auto;
-    display: flex;
-    justify-content: space-around;
   }
 
   .devImg img {
-    height: 50vh;
+    height: 48vh;
   }
 
-  .devInfo {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  .btn button {
-    background-color: teal;
-    color: white;
-    border-radius: 25px;
-    padding: 2px 13px;
-    margin: 20px 15px 25px 0;
-    cursor: pointer;
-    font-family: "Cairo", sans-serif;
-    /* font-size: 15px; */
-    font-size: 1rem;
-    border-color: teal;
-    font-weight: bold;
-  }
   .btn button:hover {
     background-color: white;
     color: teal;
   }
 
-  .hi {
-    /* font-size: 50px; */
-    font-size: 3.2em;
-    font-family: "IBM Plex Mono", monospace;
-  }
-
-  .name {
-    /* font-size: 45px; */
-    font-size: 2.8em;
-    font-family: "Cairo", sans-serif;
-    font-weight: bold;
-  }
-
-  .about {
-    /* font-size: 18px; */
-    font-size: 1.15em;
-    font-family: "IBM Plex Mono", monospace;
-    margin: 5px 0;
-    font-weight: bold;
-  }
-
   /* Styling Hamburger Icons */
-  .menu,
-  .cross {
-    position: absolute;
-    margin-top: 10px;
-    cursor: pointer;
-  }
   .cross {
     right: 70vw;
-    padding-right: 10px;
-  }
-  .d-none {
-    display: none;
   }
   .menu {
     margin-left: 10px;
   }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 920px) {
   .infoContainer {
     width: 90vw;
-    margin: 25vh 50px;
   }
 
   .sidebar {
@@ -374,7 +313,7 @@
 @media screen and (max-width: 768px) {
   .infoContainer {
     width: 95vw;
-    margin: 25vh 40px;
+    margin: 25vh 40px 0;
   }
   .h1 {
     font-size: 3em;
@@ -394,10 +333,13 @@
     right: 50vw;
   }
   .btn #downloadCV {
-    margin: 20px 10px 25px 0;
+    margin: 20px 0 0;
   }
   .btn #contactMe {
-    margin: 20px 0 25px 10px;
+    margin: 20px 0 0;
+  }
+  .btn button {
+    width: 140px;
   }
   /* footer styling */
 
@@ -432,13 +374,15 @@
     flex-direction: column;
     align-items: center;
     width: 80vw;
-    margin: 10vh auto 20vh;
+    margin: 7vh auto 0;
     height: fit-content;
   }
   .devInfo {
     align-items: center;
   }
-
+  .devImg {
+    margin-top: 20px;
+  }
   .hi {
     font-size: 2.5em;
   }
@@ -457,10 +401,10 @@
     font-size: 1.5em;
   }
   .btn #downloadCV {
-    margin: 20px 10px 25px 0;
+    margin: 20px 10px 0 0;
   }
   .btn #contactMe {
-    margin: 20px 0 25px 10px;
+    margin: 20px 0 0;
   }
   .footer,
   .footerMain {
@@ -471,6 +415,7 @@
   .footerName {
     margin-bottom: 10px;
   }
+
   .vertBar {
     display: none;
   }
@@ -493,9 +438,6 @@
   .sidebarTran {
     transform: translate(-100vw, 0);
   }
-  .infoContainer {
-    padding-top: 4vh;
-  }
   .footer {
     width: calc(100% - 40px);
     margin-left: 20px;
@@ -511,18 +453,24 @@
     font-size: 0.8em;
   }
 }
-@media screen and (max-width: 320px) {
-  .btn {
+@media screen and (max-width: 368px) {
+  /* .btn {
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
+  } */
   .btn #downloadCV,
   .btn #contactMe {
-    margin: 10px 0 0;
+    /* margin: 10px 0 0; */
     font-size: 0.7em;
   }
-
+  .btn button {
+    width: 120px;
+  }
+  .btn #project {
+    height: 30px;
+    font-size: 0.8rem;
+  }
   .devImg img {
     margin-top: 20px;
   }
