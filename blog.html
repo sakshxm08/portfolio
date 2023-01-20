@@ -4,24 +4,32 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#008080" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="blog.css" />
     <link rel="icon" type="image/x-icon" href="./content/blogLogo.png" />
     <!-- <script src="script.js"></script> -->
     <title>Blog</title>
+    <script
+      src="https://kit.fontawesome.com/dffffa55e9.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <div class="myContainer">
       <div class="sidebar sidebarTran">
         <div class="hamburgerCross">
-          <img
+          <!-- <img
             class="cross d-none"
             src="./content/close.png"
             alt=""
             width="40px"
             id="cross"
-          />
+          /> -->
+          <i
+            class="fa-solid fa-xmark fa-2xl cross d-none"
+            id="cross"
+            style="line-height: 1; color: white"
+          ></i>
         </div>
         <nav>
           <ul>
@@ -35,13 +43,18 @@
       <div class="mainContent">
         <div class="main">
           <div class="hamburgerMenu">
-            <img
+            <!-- <img
               class="menu"
               src="./content/menu.png"
               alt=""
               width="40px"
               id="menu"
-            />
+            /> -->
+            <i
+              class="fa-solid fa-bars menu fa-2xl"
+              id="menu"
+              style="line-height: 1"
+            ></i>
           </div>
           <div class="header"><h1>Blogs</h1></div>
           <div class="blogContainer" id="blogContainer">

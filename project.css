@@ -23,6 +23,13 @@
   align-items: center;
   margin-bottom: 40px;
 }
+.parentProject {
+  width: 384px;
+  height: calc(316.81px - 3vh);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .project {
   border: 1px solid teal;
   border-radius: 10px;
@@ -36,6 +43,7 @@
 .projectImg {
   transition: width 0.8s, height 0.8s;
   width: 320px;
+
   height: 180px;
   border-radius: 10px 10px 0 0;
 }

@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#008080" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="project.css" />
     <link
@@ -15,18 +14,27 @@
     />
     <link rel="icon" type="image/x-icon" href="./content/titleLogo.png" />
     <title>Projects</title>
+    <script
+      src="https://kit.fontawesome.com/dffffa55e9.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <div class="myContainer">
       <div class="sidebar sidebarTran">
         <div class="hamburgerCross">
-          <img
+          <!-- <img
             class="cross d-none"
             src="./content/close.png"
             alt=""
             width="40px"
             id="cross"
-          />
+          /> -->
+          <i
+            class="fa-solid fa-xmark fa-2xl cross d-none"
+            id="cross"
+            style="line-height: 1; color: white"
+          ></i>
         </div>
         <nav>
           <ul>
@@ -40,26 +48,33 @@
       <div class="mainContent">
         <div class="main">
           <div class="hamburgerMenu">
-            <img
+            <!-- <img
               class="menu"
               src="./content/menu.png"
               alt=""
               width="40px"
               id="menu"
-            />
+            /> -->
+            <i
+              class="fa-solid fa-bars menu fa-2xl"
+              id="menu"
+              style="line-height: 1"
+            ></i>
           </div>
           <div class="myHeader">Projects</div>
 
           <div class="projectContainer" id="projectContainer">
-            <div
-              class="project"
-              id="textUtils"
-              data-bs-toggle="modal"
-              data-bs-target="#textUtilsModal"
-            >
-              <img class="projectImg" src="./content/textUtils.png" />
+            <div class="parentProject">
+              <div
+                class="project"
+                id="textUtils"
+                data-bs-toggle="modal"
+                data-bs-target="#textUtilsModal"
+              >
+                <img class="projectImg" src="./content/textUtils.png" />
 
-              <div class="projectTitle">TextUtils</div>
+                <div class="projectTitle">TextUtils</div>
+              </div>
             </div>
             <div
               class="modal fade"
@@ -85,6 +100,7 @@
                   <div class="modal-footer">
                     <a
                       href="https:github.com/sakshxm08/textutils/tree/gh-pages"
+                      target="_blank"
                     >
                       <button
                         type="button"
@@ -94,7 +110,10 @@
                         Open Git Repository
                       </button></a
                     >
-                    <a href="https://sakshxm08.github.io/textutils/">
+                    <a
+                      href="https://sakshxm08.github.io/textutils/"
+                      target="_blank"
+                    >
                       <button type="button" class="btn btn-primary">
                         View Deployment
                       </button></a
@@ -103,16 +122,17 @@
                 </div>
               </div>
             </div>
-            <div
-              class="project"
-              id="shopify"
-              data-bs-toggle="modal"
-              data-bs-target="#shopifyModal"
-            >
-              <img class="projectImg" src="./content/shopify.png" />
-              <div class="projectTitle">Shopify Landing Page</div>
+            <div class="parentProject">
+              <div
+                class="project"
+                id="shopify"
+                data-bs-toggle="modal"
+                data-bs-target="#shopifyModal"
+              >
+                <img class="projectImg" src="./content/shopify.png" />
+                <div class="projectTitle">Shopify Landing Page</div>
+              </div>
             </div>
-
             <div
               class="modal fade"
               id="shopifyModal"
@@ -135,7 +155,10 @@
                   </div>
                   <!-- <div class="modal-body">...</div> -->
                   <div class="modal-footer">
-                    <a href="https://github.com/sakshxm08/shopify-lp">
+                    <a
+                      href="https://github.com/sakshxm08/shopify-lp"
+                      target="_blank"
+                    >
                       <button
                         type="button"
                         class="btn btn-secondary"
@@ -144,7 +167,10 @@
                         Open Git Repository
                       </button></a
                     >
-                    <a href="https://sakshxm08.github.io/shopify-lp/">
+                    <a
+                      href="https://sakshxm08.github.io/shopify-lp/"
+                      target="_blank"
+                    >
                       <button type="button" class="btn btn-primary">
                         View Deployment
                       </button></a
@@ -153,14 +179,16 @@
                 </div>
               </div>
             </div>
-            <div
-              class="project"
-              id="skriper"
-              data-bs-toggle="modal"
-              data-bs-target="#chatAppModal"
-            >
-              <img class="projectImg" src="./content/chatApp.png" />
-              <div class="projectTitle">ChatApp</div>
+            <div class="parentProject">
+              <div
+                class="project"
+                id="skriper"
+                data-bs-toggle="modal"
+                data-bs-target="#chatAppModal"
+              >
+                <img class="projectImg" src="./content/chatApp.png" />
+                <div class="projectTitle">ChatApp</div>
+              </div>
             </div>
             <div
               class="modal fade"
@@ -184,7 +212,10 @@
                   </div>
                   <!-- <div class="modal-body">...</div> -->
                   <div class="modal-footer">
-                    <a href="https:github.com/sakshxm08/chatApp">
+                    <a
+                      href="https:github.com/sakshxm08/chatApp"
+                      target="_blank"
+                    >
                       <button
                         type="button"
                         class="btn btn-secondary"
@@ -193,7 +224,10 @@
                         Open Git Repository
                       </button></a
                     >
-                    <a href="https://sakshxm08.github.io/chatApp/">
+                    <a
+                      href="https://sakshxm08.github.io/chatApp/"
+                      target="_blank"
+                    >
                       <button type="button" class="btn btn-primary">
                         View Static Deployment
                       </button></a
@@ -202,27 +236,29 @@
                 </div>
               </div>
             </div>
-            <!-- <div
-              class="project"
-              id="skriper"
-              data-bs-toggle="modal"
-              data-bs-target="#skriperModal"
-            >
-              <img class="projectImg" src="./content/skriper.png" />
-              <div class="projectTitle">skriper.dev Clone</div>
+            <div class="parentProject">
+              <div
+                class="project"
+                id="onetap"
+                data-bs-toggle="modal"
+                data-bs-target="#onetapModal"
+              >
+                <img class="projectImg" src="./content/skriper.png" />
+                <div class="projectTitle">OneTap</div>
+              </div>
             </div>
             <div
               class="modal fade"
-              id="skriperModal"
+              id="onetapModal"
               tabindex="-1"
-              aria-labelledby="skriperModalLabel"
+              aria-labelledby="onetapModalLabel"
               aria-hidden="true"
             >
               <div class="modal-dialog">
                 <div class="modal-content">
                   <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="skriperModalLabel">
-                      skriper.dev Clone
+                    <h1 class="modal-title fs-5" id="onetapModalLabel">
+                      OneTap Clone
                     </h1>
                     <button
                       type="button"
@@ -233,7 +269,8 @@
                   </div>
                   <div class="modal-footer">
                     <a
-                      href="https:github.com/sakshxm08/textutils/tree/gh-pages"
+                      href="https:github.com/sakshxm08/onetap-final"
+                      target="_blank"
                     >
                       <button
                         type="button"
@@ -243,7 +280,10 @@
                         Open Git Repository
                       </button></a
                     >
-                    <a href="https://sakshxm08.github.io/textutils/">
+                    <a
+                      href="https://onetap-sakshxm08.netlify.app"
+                      target="_blank"
+                    >
                       <button type="button" class="btn btn-primary">
                         View Deployment
                       </button></a
@@ -251,7 +291,7 @@
                   </div>
                 </div>
               </div>
-            </div> -->
+            </div>
           </div>
         </div>
 
